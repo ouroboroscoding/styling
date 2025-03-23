@@ -1,0 +1,30 @@
+html {
+	background-color: #fdfdfd;
+	color: #1f1f1f;
+	font-family: "Roboto","Helvetica","Arial",sans-serif;
+	height: 100%;
+
+	body {
+		height: 100%;
+
+		a, a:active, a:hover, a:link, a:visited, .link {
+			color: #97d9ff;
+			text-decoration: none;
+		}
+
+		a:hover, .link:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+html.dark {
+	background-color: #1f1f1f;
+	color: #fdfdfd;
+
+	body {
+		a, a:active, a:hover, a:link, a:visited, .link {
+			color: #97d9ff;
+		}
+	}
+}

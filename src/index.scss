@@ -1,0 +1,17 @@
+// Normalize
+@forward '../node_modules/normalize.css/normalize.css';
+
+// Low level props
+@forward 'margin';
+@forward 'padding';
+
+// Elements
+@forward 'elements';
+
+// Types
+@forward 'flex';
+@forward 'grid';
+@forward 'card';
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
