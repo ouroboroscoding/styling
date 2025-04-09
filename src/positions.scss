@@ -1,0 +1,21 @@
+.center {
+	text-align: center;
+}
+
+.left {
+	text-align: left;
+}
+
+.middle {
+	display: flex;
+	height: 100%;
+	align-items: center;
+}
+
+.middle.center {
+	justify-content: center;
+}
+
+.right {
+	text-align: right;
+}

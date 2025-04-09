@@ -63,13 +63,13 @@ $sizes: ("xs": 0, "sm": 600, "md": 900, "lg": 1200, "xl": 1536);
 // Step through increments of 3
 @each $size in 0, 3, 6, 9, 12, 15 {
 	.grid.spacing-#{$size} {
-		margin-left: #{$size}px;
-		margin-top: #{$size}px;
-		width: 100%;
+		margin-left: -#{$size}px;
+		margin-top: -#{$size}px;
+		width: calc(100% + #{$size}px);
 
 		.grid-item {
-			padding-left: #{$size};
-			padding-top: #{$size};
+			padding-left: #{$size}px;
+			padding-top: #{$size}px;
 		}
 	}
 }
