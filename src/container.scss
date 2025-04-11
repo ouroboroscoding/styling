@@ -1,0 +1,27 @@
+/**
+ * Container
+ *
+ * Class to make a width limited container.
+ *
+ * @author Chris Nasr <chris@ourcode.ca>
+ * @copyright Ouroboros Coding Inc.
+ * @created 2025-04-10
+ */
+ @use 'sizes' as *;
+
+.container {
+	margin-right: 5px;
+	margin-left: 5px;
+	max-width: 100%;
+}
+
+// Step through each size, even 0px
+@each $name, $size in $sizes {
+	@media (min-width: calc(#{$size}px + 10px)) {
+		.container.#{$name} {
+			margin-left: auto;
+			margin-right: auto;
+			max-width: #{$size}px;
+		}
+	}
+}
