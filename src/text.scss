@@ -1,0 +1,26 @@
+h1, h2 { margin: 0.37em 0 0.67em 0; }
+h3 { margin-block-start: 0.75em; margin-block-end: 0.75em; }
+
+p.bold, span.bold, i.bold {
+	font-weight: bold;
+}
+
+p.boldest, span.boldest, i.boldest {
+	font-weight: bolder;
+}
+
+p.larger, span.larger, i.larger {
+	font-size: 1.2em;
+}
+
+p.largest, span.largest, i.largest {
+	font-size: 1.4em;
+}
+
+p.smaller, span.smaller, i.smaller {
+	font-size: 0.8em;
+}
+
+p.smallest, span.smallest, i.smallest {
+	font-size: 0.6em;
+}

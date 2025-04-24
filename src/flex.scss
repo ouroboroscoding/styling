@@ -1,0 +1,41 @@
+/**
+ * Flex
+ *
+ * Classes to make flex containers and items easily.
+ *
+ * @author Chris Nasr <chris@ourcode.ca>
+ * @copyright Ouroboros Coding Inc.
+ * @created 2025-03-23
+ */
+
+.flex-column, .flex-rows, .flex-row, .flex-columns {
+	box-sizing: border-box;
+	clear: both;
+	display: flex;
+}
+
+.flex-column, .flex-rows {
+	flex-direction: column;
+	height: 100%;
+	overflow: hidden;
+}
+
+.flex-row, .flex-columns {
+	flex-direction: row;
+	width: 100%;
+}
+
+.flex-column, .flex-rows,
+.flex-row, .flex-columns {
+	.flex-dynamic {
+		flex: 1 1 0;
+	}
+	.flex-static {
+		flex: 0 0 auto;
+	}
+}
+
+.flex-column, .flex-rows > .flex-dynamic {
+	height: 100%;
+	overflow-y: auto;
+}

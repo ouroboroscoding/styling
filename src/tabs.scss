@@ -1,0 +1,61 @@
+/**
+ * Tabs
+ *
+ * Class and sub-classes to make tabs.
+ *
+ * @author Chris Nasr <chris@ourcode.ca>
+ * @copyright Ouroboros Coding Inc.
+ * @created 2025-04-08
+ */
+@use 'colours' as *;
+
+.tabs {
+	display: flex;
+	flex-direction: row;
+
+	.tab {
+		cursor: pointer;
+		flex: 1 1 0;
+		font-family: monospace;
+		font-size: 14px;
+		height: 20px;
+		line-height: 20px;
+		margin-right: 5px;
+		padding: 10px 0;
+		text-align: center;
+		text-transform: uppercase;
+		touch-action: manipulation;
+		user-select: none;
+		-webkit-user-select: none;
+		white-space: nowrap;
+		will-change: box-shadow,transform;
+	}
+
+	.tab:last-child {
+		margin: 0;
+	}
+
+	.tab.selected {
+		background-color: $cBlue;
+		border-radius: 4px 4px 0 0;
+		box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px, $cDarkBlue 0 -3px 0 inset;
+		color: $cWhite;
+		font-weight: bold;
+	}
+}
+
+.tabs.small {
+	.tab {
+		height: 10px;
+		line-height: 10px;
+		font-size: 0.9em;
+	}
+}
+
+.tabs.large {
+	.tab {
+		height: 30px;
+		line-height: 30px;
+		font-size: 1.1em;
+	}
+}

@@ -1,0 +1,12 @@
+/**
+ * Sizes
+ *
+ * Holds the object of size names to minimum pixels. Maximum should be
+ * considered 1 less than the minimum of the next size up. The last element
+ * always no maximum.
+ *
+ * @author Chris Nasr <chris@ourcode.ca>
+ * @copyright Ouroboros Coding Inc.
+ * @created 2025-04-10
+ */
+$sizes: ("xs": 0, "sm": 600, "md": 900, "lg": 1200, "xl": 1536);

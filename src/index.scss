@@ -1,0 +1,35 @@
+/*!
+ * Ouroboros Coding Styling
+ *
+ * @author Chris Nasr <chris@ourcode.ca>
+ * @copyright Ouroboros Coding Inc.
+ * @created 2025-03-25
+ */
+
+// Normalize
+@forward '../node_modules/normalize.css/normalize.css';
+@forward 'fixes';
+
+// Low level props
+@forward 'margin';
+@forward 'padding';
+@forward 'positions';
+@forward 'text';
+@forward 'width';
+
+// Elements
+@forward 'elements';
+
+// Types
+@forward 'card';
+@forward 'chips';
+@forward 'code';
+@forward 'container';
+@forward 'flex';
+@forward 'form';
+@forward 'grid';
+@forward 'tables';
+@forward 'tabs';
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
