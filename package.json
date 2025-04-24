@@ -1,6 +1,6 @@
 {
   "name": "@ouroboros/styling",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "CSS for Ouroboros Coding projects",
   "main": "oc-styling.css",
   "scripts": {
@@ -18,7 +18,7 @@
     "CSS"
   ],
   "author": "Chris Nasr <chris@ouroboroscoding.com>",
-  "license": "CUSTOM",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/ouroboroscoding/styling/issues"
   },

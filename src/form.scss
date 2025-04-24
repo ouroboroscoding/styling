@@ -21,13 +21,14 @@
 	cursor: pointer;
 	display: inline-flex;
 	font-family: monospace;
+	font-size: 18px;
 	height: 42px;
 	justify-content: center;
 	line-height: 1;
 	list-style: none;
 	overflow: hidden;
-	padding-left: 16px;
-	padding-right: 16px;
+	padding-left: 18px;
+	padding-right: 18px;
 	position: relative;
 	text-align: left;
 	text-decoration: none;
@@ -37,7 +38,6 @@
 	touch-action: manipulation;
 	white-space: nowrap;
 	will-change: box-shadow,transform;
-	font-size: 18px;
 }
 
 .form-button:focus {
@@ -52,6 +52,21 @@
 .form-button:active {
 	box-shadow: $cDarkBlue 0 3px 7px inset;
 	transform: translateY(2px);
+}
+
+.form-button.small {
+	height: 32px;
+	font-size: 14px;
+	padding-left: 14px;
+	padding-right: 14px;
+}
+
+.form-button.large {
+	height: 50px;
+	font-size: 22px;
+	font-weight: bold;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 .form-field {

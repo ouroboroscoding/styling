@@ -1,0 +1,21 @@
+/**
+ * Width
+ *
+ * Classes to set widths and max widths
+ *
+ * @author Chris Nasr <chris@ourcode.ca>
+ * @copyright Ouroboros Coding Inc.
+ * @created 2025-04-11
+ */
+@use 'sizes' as *;
+
+// Step through each size, even 0px
+@each $name, $size in $sizes {
+	.width-#{$name} {
+		width: #{$size}px;
+	}
+
+	.max-width-#{$name} {
+		max-width: #{$size}px;
+	}
+}
